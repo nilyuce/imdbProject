@@ -14,6 +14,10 @@ public abstract class BasePage {
     @FindBy(xpath = "//*[@data-testid='accept-button']")
     public WebElement loginCookieAccept;
 
+    @FindBy(id = "imdbHeader-navDrawerOpen")
+    public WebElement menuIcon;
+
+
 
 
 
