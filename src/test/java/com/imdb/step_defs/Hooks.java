@@ -27,6 +27,7 @@ public class Hooks {
         Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 
 
+
     }
 
     //@Before (value = "@login", order = 2 )
