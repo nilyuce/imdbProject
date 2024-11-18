@@ -9,13 +9,13 @@ import org.junit.runner.RunWith;
 
         plugin = {
                 "html:target/cucumber-reports.html",
-                "rerun:target/rerun.txt",
-                "me.jvt.cucumber.report.PrettyReports:target/cucumber"
+                "rerun:target/rerun.txt"//,
+               // "me.jvt.cucumber.report.PrettyReports:target/cucumber"
         },
             features = "src/test/resources/features",
             glue = "com/imdb/step_defs",
             dryRun = false,
-            tags = " ",
+            tags = "@login",
             publish = true// generating a report with public link
 
 )
