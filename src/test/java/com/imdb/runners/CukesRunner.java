@@ -14,8 +14,8 @@ import org.junit.runner.RunWith;
         },
             features = "src/test/resources/features",
             glue = "com/imdb/step_defs",
-            dryRun = false,
-            tags = "@Top250",
+            dryRun = true,
+            tags = "@topBoxOffice",
             publish = true// generating a report with public link
 
 )
