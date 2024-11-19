@@ -17,6 +17,9 @@ public abstract class BasePage {
     @FindBy(id = "imdbHeader-navDrawerOpen")
     public WebElement menuIcon;
 
+    @FindBy(linkText = "Top 250 Movies")
+    public WebElement top250MoviesLink;
+
 
 
 

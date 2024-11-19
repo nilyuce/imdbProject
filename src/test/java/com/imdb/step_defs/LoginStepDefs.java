@@ -26,7 +26,6 @@ public class LoginStepDefs extends BasePage  {
     @Then("The user press to Menu Icon")
     public void the_user_press_to_Menu_Icon() {
         menuIcon.click();
-
     }
 
 
