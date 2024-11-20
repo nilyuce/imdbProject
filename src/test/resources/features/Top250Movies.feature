@@ -7,6 +7,8 @@ Background: User login to the IMDB website
 
   Scenario: User detailed view of the top 250 Movies
     Then The user view detailed information about the movie
+    Then The user view Grid view about the movies
+    Then The user view Compact view about the movies
 
 
 

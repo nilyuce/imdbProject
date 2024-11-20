@@ -7,11 +7,19 @@ import org.openqa.selenium.support.PageFactory;
 
 public class Top250MoviesPage {
 
-public Top250MoviesPage(){
-    PageFactory.initElements(Driver.getDriver(), this);
-}
+    public Top250MoviesPage() {
+        PageFactory.initElements(Driver.getDriver(), this);
+    }
 
-@FindBy(id="list-view-option-detailed")
+    @FindBy(id = "list-view-option-detailed")
     public WebElement detailedView;
+
+    @FindBy(id = "list-view-option-grid")
+    public WebElement gridView;
+
+
+    @FindBy(id = "list-view-option-compact")
+    public WebElement compactView;
+
 
 }
