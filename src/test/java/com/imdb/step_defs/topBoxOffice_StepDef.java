@@ -1,6 +1,7 @@
 package com.imdb.step_defs;
 
 import com.imdb.pages.BasePage;
+import com.imdb.utilities.BrowserUtils;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -9,7 +10,9 @@ public class topBoxOffice_StepDef extends BasePage{
 
 	@Then("The user navigate to the TopBoxOffice page")
 	public void theUserNavigateToTheTopBoxOfficePage() {
+
 		clickMenuLink("Top Box Office");
+
 	}
 
 	@Then("the page title should be {string}")

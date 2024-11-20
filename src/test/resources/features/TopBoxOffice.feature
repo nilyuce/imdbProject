@@ -9,6 +9,7 @@ Feature: IMDb Top Box Office Page Testing
     Then The user press to Menu Icon
     Then The user navigate to the TopBoxOffice page
 
+  @active
   Scenario: Verify page title and main heading
     Then the page title should be "IMDb Charts: Top Box Office (US)"
     And the main heading should be "Top Box Office (US)"
