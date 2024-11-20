@@ -8,6 +8,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 
@@ -24,9 +25,20 @@ public class Top250Movies_StepDef extends BasePage {
     @Then("The user view detailed information about the movie")
     public void theUserViewDetailedInformationAboutTheMovie() {
         actions.sendKeys(Keys.PAGE_DOWN).perform();
+
         top250MoviesPage.detailedView.click();
 
+    }
 
+    @Then("The user view Grid view about the movies")
+    public void theUserViewGridViewAboutTheMovies() {
+        top250MoviesPage.gridView.click();
+
+    }
+
+    @Then("The user view Compact view about the movies")
+    public void theUserViewCompactViewAboutTheMovies() {
+        top250MoviesPage.compactView.click();
 
     }
 }
